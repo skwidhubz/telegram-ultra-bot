@@ -5,7 +5,6 @@ const port = 3000;
 
 // replace the value below with the Telegram token you receive from @BotFather
 const token = process.env.TGTOKEN
-// Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(token, {polling: true});
 
 let textData = process.env.TEXTDATA; // use this for the content of your message.
@@ -31,14 +30,12 @@ async function ChannelPoster (textData) {
       console.error('An error occurred:', error);
     });
 };
-// End bot-2-channel poster
 
 // Execute bot-2-channel-poster
 ChannelPoster(textData);
 
 
 // Bot DM Reply 
-
 async function botDmResponder () {
 
 bot.onText(/\/start/, (msg) => {
