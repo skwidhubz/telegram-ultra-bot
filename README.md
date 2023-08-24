@@ -1,2 +1,5 @@
-# telegram-ultra-bot
-Telegram bot for DM's and post to channel as bot. 
+# Telegram Ultra Bot
+
+## Telegram bot to respond to DM's and post to a channel. 
+
+
